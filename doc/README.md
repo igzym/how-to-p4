@@ -1,6 +1,15 @@
 How to P4
 =========
 
+
+Preamble
+--------
+
+**DRAFT**
+
+This document is incomplete. I plan on adding material regularly.
+
+
 Helpers
 -------
 
@@ -19,15 +28,15 @@ Here are the most frequently used `p4` operations
 * p4 edit / p4 add / p4 delete / p4 move -- define changelists contents
 * p4 submit -- push changes to the server
 * p4 sync -- get updates from the server
-* p4 shelve -- temporary save a changelist on the server without actually committing it
+* p4 shelve -- temporarily save a changelist on the server without actually committing it
 * p4 change -- create new pending changelist or display an existing one
 * p4 describe -- show information about a changelist
 * p4 changes -- list changelists
 * p4 interchanges -- summary of changes between two branches / codelines
 * p4 resolve -- finalise an integration or a sync where you had opened files
 * p4 revert -- discard the uncommitted changes to files in your working directory
-* p4 filelog -- detailed file hisotry
-* p4 merge / p4 copy (and p4 integ for the courageous)
+* p4 filelog -- detailed file history
+* p4 merge / p4 copy (with p4 integ as underlying engine)
 
 
 Workspaces aka Clients
