@@ -45,6 +45,10 @@ function __htp4chg_filt {
 function htp4changes {
 	: perforce pending changes
 	local clientName=$(p4 -ztag info | awk '$2 == "clientName" { print $3 }')
+	if [[ "$clientName" = "*unknown*" ]]; then
+		echo "No client" >&2
+		return 1
+	fi
 	local out
 	out=$(p4 -ztag opened -C "$clientName" -c default | grep -E '\.\.\. depotFile' | 
 		sed 's/ depotFile[[:digit:]]*//')
