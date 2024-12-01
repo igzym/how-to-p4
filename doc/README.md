@@ -2,14 +2,6 @@ How to P4
 =========
 
 
-Preamble
---------
-
-**DRAFT**
-
-This document is incomplete. I plan on adding material regularly.
-
-
 Helpers
 -------
 
